@@ -6,4 +6,6 @@
 
 # 09 April ///Articulation point //leetcode 55.Jump Game
 
-# 10 April ///215. Kth Largest Element in an Array ///
+# 10 April ///274. H-Index ///
+
+# 11 April //287. Find the Duplicate Number
