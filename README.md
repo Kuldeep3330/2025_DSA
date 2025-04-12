@@ -9,3 +9,5 @@
 # 10 April ///274. H-Index ///
 
 # 11 April //287. Find the Duplicate Number ////238. Product of Array Except Self
+
+# 12 April //Find Kth Rotation(GFG) //Search in Rotated Sorted Array(GFG)
