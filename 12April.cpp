@@ -21,7 +21,25 @@ int findKRotation(vector<int> &arr)
 }
 
 // efficient O(logn)
-
+int findKRotation(vector<int> &arr)
+{
+    // Code Here
+    int n = arr.size();
+    int low = 0, high = n - 1;
+    while (low < high)
+    {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] > arr[high])
+        {
+            low = mid + 1;
+        }
+        else
+        {
+            high = mid;
+        }
+    }
+    return low;
+}
 // Search in Rotated Sorted Array
 // O(n)
 int search(vector<int> &arr, int key)
