@@ -9,23 +9,69 @@ using namespace std;
 //     }else
 //     return isSubsRec(s1, s2, n-1, m);
 // }
+
+void reverseStr(string &str, int left, int right)
+{
+    while (left < right)
+    {
+        swap(str[left], str[right]);
+        left++;
+        right--;
+    }
+}
+
 int main()
 {
-    // leftmost repeating character
-    string str = "Kuldeep";
-    vector<int> count(26, 0);
-    for (int i = 0; i < str.length(); i++)
+    string str = "I love you";
+    int n = str.length();
+
+    // Step 1: Reverse each word
+    int left = 0;
+    for (int right = 0; right <= n; right++)
     {
-        count[str[i] - 'a']++;
-    }
-    for (int i = 0; i < 26; i++)
-    {
-        if (count[i] > 1)
+        if (right == n || str[right] == ' ')
         {
-            cout << (char)(i + 'a') << " repeates\n";
+            reverseStr(str, left, right - 1);
+            left = right + 1;
         }
     }
-    cout << "program executes successfully\n";
+
+    // Step 2: Reverse the entire string
+    reverseStr(str, 0, n - 1);
+
+    cout << str << endl; // Output: "you love I"
+
+    // // leftmost non-repeating element
+    // string str = "Kuldeep";
+    // vector<int> count(26, 0);
+    // for (int i = 0; i < str.length(); i++)
+    // {
+    //     count[str[i] - 'a']++;
+    // }
+    // for (int i = 0; i < 26; i++)
+    // {
+    //     if (count[i] == 1)
+    //     {
+    //         cout << (char)(i + 'a') << " not repeates\n";
+    //         break;
+    //     }
+    // }
+    // cout << "program executes successfully\n";
+    // leftmost repeating character
+    // string str = "Kuldeep";
+    // vector<int> count(26, 0);
+    // for (int i = 0; i < str.length(); i++)
+    // {
+    //     count[str[i] - 'a']++;
+    // }
+    // for (int i = 0; i < 26; i++)
+    // {
+    //     if (count[i] > 1)
+    //     {
+    //         cout << (char)(i + 'a') << " repeates\n";
+    //     }
+    // }
+    // cout << "program executes successfully\n";
 
     // //check Anagram
     // string str1 = "listen";
