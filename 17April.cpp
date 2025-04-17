@@ -3,22 +3,41 @@ using namespace std;
 
 int main()
 {
+    // check if a string is a subsequence of other
+    string str1 = "ABCD";
+    string str2 = "AD";
+    int m = str1.length();
+    int n = str2.length();
+    int i = 0, j = 0;
+    while (i < m && j < n)
+    {
+        if (str1[i] == str2[j])
+        {
+            i++;
+            j++;
+        }
+        i++;
+    }
+    bool flag = (j == n);
+    cout << flag << "\n";
+    // return ;
+
     // palindrome check
-    string str = "ABCDBA";
+    // string str = "ABCDBA";
     // string curr = str;
     // reverse(str.begin(), str.end());
 
     // bool flag = (str == curr);
     // cout << flag << "\n";
 
-    int low = 0, high = str.length() - 1;
-    while (low <= high)
-    {
-        swap(str[low], str[high]);
-        low++;
-        high--;
-    }
-    cout << str << "\n";
+    // int low = 0, high = str.length() - 1;
+    // while (low <= high)
+    // {
+    //     swap(str[low], str[high]);
+    //     low++;
+    //     high--;
+    // }
+    // cout << str << "\n";
 
     // print frequencies of given string
     // string str = "kuldeep";
