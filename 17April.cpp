@@ -11,22 +11,39 @@ using namespace std;
 // }
 int main()
 {
-    string str1 = "listen";
-    string str2 = "silen";
+    // leftmost repeating character
+    string str = "Kuldeep";
     vector<int> count(26, 0);
-    for (int i = 0; i < str1.length(); i++)
+    for (int i = 0; i < str.length(); i++)
     {
-        count[str1[i] - 'a']++;
-        count[str2[i] - 'a']--;
+        count[str[i] - 'a']++;
     }
     for (int i = 0; i < 26; i++)
     {
-        if (count[i] > 0)
+        if (count[i] > 1)
         {
-            cout << "not anagram\n";
+            cout << (char)(i + 'a') << " repeates\n";
         }
     }
-    cout << "program executed successfully\n";
+    cout << "program executes successfully\n";
+
+    // //check Anagram
+    // string str1 = "listen";
+    // string str2 = "silen";
+    // vector<int> count(26, 0);
+    // for (int i = 0; i < str1.length(); i++)
+    // {
+    //     count[str1[i] - 'a']++;
+    //     count[str2[i] - 'a']--;
+    // }
+    // for (int i = 0; i < 26; i++)
+    // {
+    //     if (count[i] > 0)
+    //     {
+    //         cout << "not anagram\n";
+    //     }
+    // }
+    // cout << "program executed successfully\n";
 
     // check if a string is a subsequence of other
     // string str1 = "ABCD";
