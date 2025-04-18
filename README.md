@@ -22,6 +22,8 @@
 
 # 17 April //complete string tutorial(GFG) 15+questions
 
-# 18 APril // Count Occurences of Anagrams(GFG)
+# 18 APril
 
-# //
+# // Count Occurences of Anagrams(GFG)
+
+# // 1658. Minimum Operations to Reduce X to Zero
