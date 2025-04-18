@@ -61,3 +61,38 @@ int minOperations(vector<int> &nums, int x)
     }
     return maxLen == INT_MIN ? -1 : n - maxLen;
 }
+
+// 438. Find All Anagrams in a String
+
+vector<int> findAnagrams(string s, string p)
+{
+    vector<int> result;
+
+    int k = p.length();
+    int n = s.length();
+    // frequency arrays to keep track
+    vector<int> freqP(26, 0);
+    vector<int> freqS(26, 0);
+
+    for (char c : p)
+        freqP[c - 'a']++; ////to store frequencies for pat
+
+    for (int i = 0; i < n; i++)
+    {
+        // to store frequencies for text
+        freqS[s[i] - 'a']++;
+
+        // also remove the freq for those who goes out of the bound
+        if (i >= k)
+        {
+            freqS[s[i - k] - 'a']--;
+        }
+
+        if (i >= k - 1 && freqP == freqS)
+        {
+            result.push_back(i - k + 1);
+        }
+    }
+
+    return result;
+}
