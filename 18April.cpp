@@ -67,7 +67,7 @@ int minOperations(vector<int> &nums, int x)
 vector<int> findAnagrams(string s, string p)
 {
     vector<int> result;
-
+    // cbaebabacd
     int k = p.length();
     int n = s.length();
     // frequency arrays to keep track
