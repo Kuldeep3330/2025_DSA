@@ -68,3 +68,30 @@ int findDuplicate(vector<int> &arr)
     }
     return first;
 }
+
+// 20. Valid Parentheses
+bool isChecked(char a, char b)
+{
+    return ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'));
+}
+bool isValid(string str)
+{
+    stack<char> s;
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str[i] == '(' || str[i] == '{' || str[i] == '[')
+        {
+            s.push(str[i]);
+        }
+        else if (s.empty() != true && isChecked(s.top(), str[i]))
+        {
+            s.pop();
+        }
+        else
+        {
+            return false;
+        }
+    }
+    return (s.empty() == true);
+}
