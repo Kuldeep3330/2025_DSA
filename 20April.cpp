@@ -47,3 +47,24 @@ int removeDuplicates(vector<int> &nums)
     nums.resize(j + 1);
     return nums.size();
 }
+
+// Find Only Repetitive Element from 1 to n-1
+int findDuplicate(vector<int> &arr)
+{
+    // code here
+    // rabbit and tortoise
+    int first = 0, second = 0;
+    do
+    {
+        first = arr[first];
+        second = arr[arr[second]];
+    } while (first != second);
+    second = 0;
+
+    while (first != second)
+    {
+        first = arr[first];
+        second = arr[second];
+    }
+    return first;
+}
