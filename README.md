@@ -33,3 +33,5 @@
 # 19 April //981. Time Based Key-Value Store
 
 # 20 April //345. Reverse Vowels of a String //26. Remove Duplicates from Sorted Array //Find Only Repetitive Element from 1 to n-1(GFG) //20. Valid Parentheses
+
+# 24 April // 68. Text Justification
