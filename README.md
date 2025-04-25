@@ -41,7 +41,7 @@
 1. Two sum
 2. Two Sum II - Input Array Is Sorted
 3. 15. 3Sum
-       Trapping Rain Water
+4. 42. Trapping Rain Water
        3 Sum Closest
        Factorial of Large Numbers
        Next permutation
