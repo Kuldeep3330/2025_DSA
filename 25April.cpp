@@ -158,7 +158,36 @@ public:
         return closestSum;
     }
 };
-// Factorial of Large Numbers
+// Factorials of large numbers
+
+class Solution
+{
+public:
+    vector<int> factorial(int n)
+    {
+        // code here
+        vector<int> res;
+        res.push_back(1);
+        for (int i = 2; i <= n; i++)
+        {
+            int carry = 0;
+            for (int j = 0; j < res.size(); j++)
+            {
+                int num = res[j] * i + carry;
+                res[j] = num % 10;
+                carry = num / 10;
+            }
+            while (carry != 0)
+            {
+                res.push_back(carry % 10);
+                carry = carry / 10;
+            }
+        }
+        reverse(res.begin(), res.end());
+        return res;
+    }
+};
+
 // Next permutation
 // Next Permutation
 // Rotate Image

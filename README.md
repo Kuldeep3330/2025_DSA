@@ -43,9 +43,9 @@
 3. 15. 3Sum
 4. 42. Trapping Rain Water
 5. 16. 3Sum Closest
-       Factorial of Large Numbers
-       Next permutation
-       Next Permutation
-       Rotate Image
-       Container With MOst Water
-       Spiral Matrix
+6. Factorial of Large Numbers
+   Next permutation
+   Next Permutation
+   Rotate Image
+   Container With MOst Water
+   Spiral Matrix
