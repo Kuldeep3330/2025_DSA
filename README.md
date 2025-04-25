@@ -38,14 +38,14 @@
 
 # 25 April
 
-Two sum
-Two Sum II
-3 sum
-Trapping Rain Water
-3 Sum Closest
-Factorial of Large Numbers
-Next permutation
-Next Permutation
-Rotate Image
-Container With MOst Water
-Spiral Matrix
+1. Two sum
+2. Two Sum II - Input Array Is Sorted
+   3 sum
+   Trapping Rain Water
+   3 Sum Closest
+   Factorial of Large Numbers
+   Next permutation
+   Next Permutation
+   Rotate Image
+   Container With MOst Water
+   Spiral Matrix
