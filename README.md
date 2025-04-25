@@ -40,12 +40,12 @@
 
 1. Two sum
 2. Two Sum II - Input Array Is Sorted
-   3 sum
-   Trapping Rain Water
-   3 Sum Closest
-   Factorial of Large Numbers
-   Next permutation
-   Next Permutation
-   Rotate Image
-   Container With MOst Water
-   Spiral Matrix
+3. 15. 3Sum
+       Trapping Rain Water
+       3 Sum Closest
+       Factorial of Large Numbers
+       Next permutation
+       Next Permutation
+       Rotate Image
+       Container With MOst Water
+       Spiral Matrix

@@ -47,7 +47,54 @@ public:
         return {};
     }
 };
-// 3 sum
+// 15. 3Sum
+class Solution
+{
+public:
+    vector<vector<int>> twoSum(vector<int> &nums, int low, int high, int target)
+    {
+        vector<vector<int>> result;
+        while (low < high)
+        {
+            int sum = nums[low] + nums[high];
+            if (sum == target)
+            { /// first we will remove dups
+                while (low < high && nums[low] == nums[low + 1])
+                    low++;
+                while (low < high && nums[high] == nums[high - 1])
+                    high--;
+                result.push_back({-target, nums[low], nums[high]});
+                low++;
+                high--;
+            }
+            else if (sum > target)
+            {
+                high--;
+            }
+            else
+            {
+                low++;
+            }
+        }
+        return result;
+    }
+    vector<vector<int>> threeSum(vector<int> &nums)
+    {
+        vector<vector<int>> ans;
+        int n = nums.size();
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < n - 2; i++)
+        {
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
+            vector<vector<int>> temp = twoSum(nums, i + 1, n - 1, -nums[i]);
+
+            // Append results
+            ans.insert(ans.end(), temp.begin(), temp.end());
+        }
+        return ans;
+    }
+};
 // Trapping Rain Water
 // 3 Sum Closest
 // Factorial of Large Numbers
