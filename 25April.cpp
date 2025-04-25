@@ -125,7 +125,39 @@ public:
         return totalWater;
     }
 };
-// 3 Sum Closest
+// 16. 3Sum Closest
+class Solution
+{
+public:
+    int threeSumClosest(vector<int> &arr, int target)
+    {
+        int n = arr.size();
+        int closestSum = 100000;
+        sort(arr.begin(), arr.end());
+        for (int i = 0; i <= n - 2; i++)
+        {
+            int low = i + 1, high = n - 1;
+            while (low < high)
+            {
+                int currSum = arr[i] + arr[low] + arr[high];
+                // equal
+                if (abs(currSum - target) < abs(target - closestSum))
+                {
+                    closestSum = currSum;
+                }
+                else if (currSum < target)
+                {
+                    low++;
+                }
+                else
+                {
+                    high--;
+                }
+            }
+        }
+        return closestSum;
+    }
+};
 // Factorial of Large Numbers
 // Next permutation
 // Next Permutation
