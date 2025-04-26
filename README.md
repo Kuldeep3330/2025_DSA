@@ -47,8 +47,7 @@
 
 # 26 April
 
-31. Next Permutation
-    Next Permutation
-    Rotate Image
-    Container With MOst Water
-    Spiral Matrix
+1. 31. Next Permutation
+2. 48. Rotate Image
+       Container With MOst Water
+       Spiral Matrix
