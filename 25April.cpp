@@ -187,9 +187,3 @@ public:
         return res;
     }
 };
-
-// Next permutation
-// Next Permutation
-// Rotate Image
-// Container With MOst Water
-// Spiral Matrix
