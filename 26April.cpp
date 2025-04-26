@@ -46,5 +46,31 @@ void rotate(vector<vector<int>> &mat)
         reverse(mat[i].begin(), mat[i].end());
     }
 }
-// Container With MOst Water
+// 11. Container With Most Water
+class Solution
+{
+public:
+    int maxArea(vector<int> &arr)
+    {
+        int n = arr.size();
+        int low = 0;
+        int high = n - 1;
+        int maxArea = INT_MIN;
+        while (low < high)
+        {
+            int height = min(arr[low], arr[high]);
+            int width = high - low;
+            maxArea = max(maxArea, height * width);
+            if (arr[low] < arr[high])
+            {
+                low++;
+            }
+            else
+            {
+                high--;
+            }
+        }
+        return maxArea;
+    }
+};
 // Spiral Matrix
