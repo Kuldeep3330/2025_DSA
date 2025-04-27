@@ -34,3 +34,23 @@ public:
         return (count > n / 2) ? nums[res] : -1;
     }
 };
+
+// 53. Maximum Subarray
+class Solution
+{
+public:
+    int maxSubArray(vector<int> &nums)
+    {
+        int n = nums.size();
+        for (int i = 1; i < n; i++)
+        {
+            nums[i] = max(nums[i], nums[i] + nums[i - 1]);
+        }
+        int res = INT_MIN;
+        for (int i = 0; i < n; i++)
+        {
+            res = max(res, nums[i]);
+        }
+        return res;
+    }
+};
