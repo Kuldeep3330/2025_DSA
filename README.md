@@ -58,3 +58,4 @@
 2. 53. Maximum Subarray(Kadane's Algorithm)
 3. 918. Maximum Sum Circular Subarray
 4. 152. Maximum Product Subarray
+5. 1186. Maximum Subarray Sum with One Deletion
