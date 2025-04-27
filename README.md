@@ -64,3 +64,4 @@
 # 28 April
 
 1. Maximum sum of Non-adjacent nodes(GFG)
+2. 985. Sum of Even Numbers After Queries
