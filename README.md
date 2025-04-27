@@ -51,3 +51,10 @@
 2. 48. Rotate Image
 3. 11. Container With Most Water
 4. 54. Spiral Matrix
+
+#27 April
+
+1. 169. Majority Element
+2.
+3.
+4.
