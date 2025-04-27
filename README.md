@@ -52,7 +52,7 @@
 3. 11. Container With Most Water
 4. 54. Spiral Matrix
 
-#27 April
+# 27 April
 
 1. 169. Majority Element(Moore's Algorithm)
 2. 53. Maximum Subarray(Kadane's Algorithm)
@@ -60,3 +60,7 @@
 4. 152. Maximum Product Subarray
 5. 1186. Maximum Subarray Sum with One Deletion
 6. 1004. Max Consecutive Ones III
+
+# 28 April
+
+1. Maximum sum of Non-adjacent nodes(GFG)
