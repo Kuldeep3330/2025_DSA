@@ -59,3 +59,4 @@
 3. 918. Maximum Sum Circular Subarray
 4. 152. Maximum Product Subarray
 5. 1186. Maximum Subarray Sum with One Deletion
+6. 1004. Max Consecutive Ones III
