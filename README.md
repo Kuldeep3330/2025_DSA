@@ -54,7 +54,7 @@
 
 #27 April
 
-1. 169. Majority Element
-2. 53. Maximum Subarray
-3.
+1. 169. Majority Element(Moore's Algorithm)
+2. 53. Maximum Subarray(Kadane's Algorithm)
+3. 918. Maximum Sum Circular Subarray
 4.
