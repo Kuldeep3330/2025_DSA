@@ -107,3 +107,28 @@ vector<int> leaders(vector<int> &arr)
     reverse(leaders.begin(), leaders.end());
     return leaders;
 }
+
+// Longest Consecutive Subsequence(GFG)
+int longestConsecutive(vector<int> &arr)
+{
+    // Your code here
+    int n = arr.size();
+    sort(arr.begin(), arr.end());
+    int longest = 1;
+    int currLen = 1;
+
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] == arr[i - 1] + 1)
+        {
+            currLen++;
+        }
+        else if (arr[i] != arr[i - 1])
+        {
+            currLen = 1;
+        }
+        longest = max(longest, currLen);
+    }
+
+    return longest;
+}

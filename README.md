@@ -67,3 +67,4 @@
 2. 985. Sum of Even Numbers After Queries
 3. 2149. Rearrange Array Elements by Sign
 4. Array Leaders(GFG)
+5. Longest Consecutive Subsequence(GFG)
