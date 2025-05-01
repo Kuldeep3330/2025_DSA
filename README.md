@@ -78,3 +78,4 @@
 
 1. 2007. Find Original Array From Doubled Array
 2. 985. Sum of Even Numbers After Queries
+3. 334. Increasing Triplet Subsequence
