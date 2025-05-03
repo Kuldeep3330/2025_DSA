@@ -84,3 +84,7 @@
 
 1. 25. Reverse Nodes in k-Group
 2. 124. Binary Tree Maximum Path Sum
+
+# 03 May
+
+1. Prime List(GFG)
