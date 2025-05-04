@@ -92,3 +92,4 @@
 # 04 May
 
 1. Smallest distinct window(GFG)
+2. 1128. Number of Equivalent Domino Pairs
