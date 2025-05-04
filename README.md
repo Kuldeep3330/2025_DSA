@@ -88,3 +88,7 @@
 # 03 May
 
 1. Prime List(GFG)
+
+# 04 May
+
+1. Smallest distinct window(GFG)
