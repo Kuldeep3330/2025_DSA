@@ -49,3 +49,35 @@ public:
         return count;
     }
 };
+// 523. Continuous Subarray Sum
+class Solution
+{
+public:
+    bool checkSubarraySum(vector<int> &nums, int k)
+    {
+        int n = nums.size();
+        if (n < 2)
+            return false;
+
+        unordered_map<int, int> um;
+        um[0] = -1;
+
+        int sum = 0;
+        for (int i = 0; i < n; i++)
+        {
+            sum += nums[i];
+            int mod = sum % k;
+
+            if (um.find(mod) != um.end())
+            {
+                if (i - um[mod] >= 2)
+                    return true;
+            }
+            else
+            {
+                um[mod] = i;
+            }
+        }
+        return false;
+    }
+};
