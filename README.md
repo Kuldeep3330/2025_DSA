@@ -94,3 +94,7 @@
 1. Smallest distinct window(GFG)
 2. 1128. Number of Equivalent Domino Pairs
 3. 523. Continuous Subarray Sum
+
+# 05 May
+
+1. 560. Subarray Sum Equals K
