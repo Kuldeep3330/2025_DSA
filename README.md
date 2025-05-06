@@ -99,3 +99,7 @@
 
 1. 560. Subarray Sum Equals K
 2. 835. Image Overlap
+
+# 06 May
+
+1. 766. Toeplitz Matrix
