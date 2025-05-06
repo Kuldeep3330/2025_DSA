@@ -103,3 +103,12 @@
 # 06 May
 
 1. 766. Toeplitz Matrix
+2. 1706. Where Will the Ball Fall
+3. Valid sudoku
+4. Minimum average Difference
+5. Longest Subsequence with limited sum
+6. Minimum number of arrows to burst balloons
+7. Insert interval
+8. Maximum sum circular subarray
+9. Subarrays sums divisible by K
+10. Find the town judge
