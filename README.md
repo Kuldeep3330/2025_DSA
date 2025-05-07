@@ -110,8 +110,32 @@
 
 4. 2256. Minimum Average Difference
 5. 2389. Longest Subsequence With Limited Sum
+
+# ////////INTERVAL BASED///////////////
+
 6. 452. Minimum Number of Arrows to Burst Balloons
-7. Insert interval
-8. Maximum sum circular subarray
-9. Subarrays sums divisible by K
-10. Find the town judge
+7. 1094. Car Pooling ( prefix sum problem)
+8. check if Grid can be cut into sections
+9. count days without meetings
+10. Data stream as disjoint intervals
+11. Divide intervals into minimum number of Groups
+12. find right interval
+13. insert interval
+14. Interval List Intersections
+15. Maximum beauty of an array after applying operations
+16. Maximum numbers of events that can be attended
+17. Meeting rooms II
+18. Meeting rooms III
+19. Meeting rooms
+20. Meeting scheduler
+21. Merge interval
+22. My Calendar I
+23. My Calendar II
+24. Removed Covered Intervals
+25. Special array II
+26. The Number of the smallest unoccupied chair
+27. two best non-overlapping events
+
+28. Maximum sum circular subarray
+29. Subarrays sums divisible by K
+30. Find the town judge

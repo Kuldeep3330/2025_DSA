@@ -111,3 +111,28 @@ public:
         return count;
     }
 };
+
+// 1094. Car Pooling
+class Solution
+{
+public:
+    bool carPooling(vector<vector<int>> &trips, int capacity)
+    {
+        vector<int> highway(1001, 0);
+        for (auto &trip : trips)
+        {
+            int passengers = trip[0], start = trip[1], end = trip[2];
+            highway[start] += passengers;
+            highway[end] -= passengers;
+        }
+        if (highway[0] > capacity)
+            return false;
+        for (int i = 1; i <= 1000; i++)
+        {
+            highway[i] += highway[i - 1];
+            if (highway[i] > capacity)
+                return false;
+        }
+        return true;
+    }
+};
