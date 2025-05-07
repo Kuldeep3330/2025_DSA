@@ -115,20 +115,21 @@
 
 6. 452. Minimum Number of Arrows to Burst Balloons
 7. 1094. Car Pooling ( prefix sum problem)
-8. check if Grid can be cut into sections
-9. count days without meetings
-10. Data stream as disjoint intervals
-11. Divide intervals into minimum number of Groups
-12. find right interval
-13. insert interval
-14. Interval List Intersections
-15. Maximum beauty of an array after applying operations
-16. Maximum numbers of events that can be attended
-17. Meeting rooms II
-18. Meeting rooms III
-19. Meeting rooms
-20. Meeting scheduler
-21. Merge interval
+8. 56. Merge Intervals
+9. check if Grid can be cut into sections
+10. count days without meetings
+11. Data stream as disjoint intervals
+12. Divide intervals into minimum number of Groups
+13. find right interval
+14. insert interval
+15. Interval List Intersections
+16. Maximum beauty of an array after applying operations
+17. Maximum numbers of events that can be attended
+18. Meeting rooms II
+19. Meeting rooms III
+20. Meeting rooms
+21. Meeting scheduler
+
 22. My Calendar I
 23. My Calendar II
 24. Removed Covered Intervals
