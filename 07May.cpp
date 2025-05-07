@@ -163,3 +163,53 @@ public:
         return result;
     }
 };
+
+// 3394. Check if Grid can be Cut into Sections
+class Solution
+{
+public:
+    int merge(vector<vector<int>> &intervals)
+    {
+        int n = intervals.size();
+        sort(intervals.begin(), intervals.end());
+        vector<vector<int>> result;
+        result.push_back(intervals[0]);
+
+        for (int i = 1; i < n; i++)
+        {
+            // overlap
+            if (intervals[i][0] < result.back()[1])
+            {
+                // result.back()[0]=min(result.back()[0],intervals[i][0] );
+                result.back()[1] = max(result.back()[1], intervals[i][1]);
+            }
+            else
+            {
+                result.push_back(intervals[i]);
+            }
+        }
+        return result.size();
+    }
+    bool checkValidCuts(int n, vector<vector<int>> &rectangles)
+    {
+        // for x-axis
+        vector<vector<int>> hor;
+
+        // for y-axis
+        vector<vector<int>> ver;
+
+        for (auto &rectangle : rectangles)
+        {
+            hor.push_back({rectangle[0], rectangle[2]});
+            ver.push_back({rectangle[1], rectangle[3]});
+        }
+        int horizontalCount = merge(hor);
+
+        int verticalCount = merge(ver);
+        if (horizontalCount >= 3 || verticalCount >= 3)
+        {
+            return true;
+        }
+        return false;
+    }
+};

@@ -116,7 +116,7 @@
 6. 452. Minimum Number of Arrows to Burst Balloons
 7. 1094. Car Pooling ( prefix sum problem)
 8. 56. Merge Intervals
-9. check if Grid can be cut into sections
+9. 3394. Check if Grid can be Cut into Sections
 10. count days without meetings
 11. Data stream as disjoint intervals
 12. Divide intervals into minimum number of Groups
