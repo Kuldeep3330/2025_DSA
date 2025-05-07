@@ -109,7 +109,7 @@
 # 07 May
 
 4. 2256. Minimum Average Difference
-5. Longest Subsequence with limited sum
+5. 2389. Longest Subsequence With Limited Sum
 6. Minimum number of arrows to burst balloons
 7. Insert interval
 8. Maximum sum circular subarray

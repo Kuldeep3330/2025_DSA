@@ -31,3 +31,46 @@ public:
         return index;
     }
 };
+
+// 2389. Longest Subsequence With Limited Sum
+class Solution
+{
+public:
+    int binarySearch(vector<int> &nums, int x)
+    {
+        int n = nums.size();
+        int low = 0;
+        int high = n - 1;
+        int ans = -1;
+        while (low <= high)
+        {
+            int mid = low + (high - low) / 2;
+            if (nums[mid] <= x)
+            {
+                ans = mid;
+                low = mid + 1;
+            }
+            else if (nums[mid] > x)
+            {
+                high = mid - 1;
+            }
+        }
+        return ans + 1;
+    }
+    vector<int> answerQueries(vector<int> &nums, vector<int> &queries)
+    {
+        int n = nums.size();
+        sort(nums.begin(), nums.end());
+        for (int i = 1; i < n; i++)
+        {
+            nums[i] += nums[i - 1];
+        }
+        vector<int> result;
+        for (int i = 0; i < queries.size(); i++) // queries.size()
+        {
+            int res = binarySearch(nums, queries[i]); // logn ////upper_bound(nums.begin(), nums.end(), queries[i])-nums.begin()
+            result.push_back(res);
+        }
+        return result;
+    }
+};
