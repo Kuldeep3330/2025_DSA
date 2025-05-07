@@ -105,7 +105,10 @@
 1. 766. Toeplitz Matrix
 2. 1706. Where Will the Ball Fall
 3. Valid sudoku
-4. Minimum average Difference
+
+# 07 May
+
+4. 2256. Minimum Average Difference
 5. Longest Subsequence with limited sum
 6. Minimum number of arrows to burst balloons
 7. Insert interval
