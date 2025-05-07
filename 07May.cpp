@@ -74,3 +74,40 @@ public:
         return result;
     }
 };
+
+// 452. Minimum Number of Arrows to Burst Balloons
+bool myCmp(vector<int> a, vector<int> b)
+{
+    return a[1] < b[0];
+}
+class Solution
+{
+public:
+    int findMinArrowShots(vector<vector<int>> &points)
+    {
+        int n = points.size();
+        sort(points.begin(), points.end());
+        vector<int> prev = points[0];
+        int count = 1;
+        for (int curr = 1; curr < n; curr++)
+        {
+            int currSP = points[curr][0];
+            int currEP = points[curr][1];
+
+            int prevSP = prev[0];
+            int prevEP = prev[1];
+
+            if (prevEP < currSP) // no overlap
+            {
+                count++;
+                prev = points[curr];
+            }
+            else
+            {
+                prev[0] = max(prevSP, currSP);
+                prev[1] = min(prevEP, currEP);
+            }
+        }
+        return count;
+    }
+};
