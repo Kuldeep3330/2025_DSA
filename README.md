@@ -117,7 +117,10 @@
 7. 1094. Car Pooling ( prefix sum problem)
 8. 56. Merge Intervals
 9. 3394. Check if Grid can be Cut into Sections
-10. count days without meetings
+
+# 08 May
+
+10. 3169. Count Days Without Meetings
 11. Data stream as disjoint intervals
 12. Divide intervals into minimum number of Groups
 13. find right interval
