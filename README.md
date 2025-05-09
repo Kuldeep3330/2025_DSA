@@ -122,7 +122,10 @@
 
 10. 3169. Count Days Without Meetings
 11. Data stream as disjoint intervals
-12. Divide intervals into minimum number of Groups
+
+# 09 May
+
+12. 2406. Divide Intervals Into Minimum Number of Groups
 13. find right interval
 14. insert interval
 15. Interval List Intersections
