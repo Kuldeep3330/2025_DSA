@@ -143,10 +143,17 @@
 26. The Number of the smallest unoccupied chair
 27. two best non-overlapping events
 
-28. Maximum sum circular subarray
-29. Subarrays sums divisible by K
-30. Find the town judge
-
 # 10 May
 
 1. 974. Subarray Sums Divisible by K
+2. 345. Reverse Vowels of a String
+
+3. remove dups from a sorted array
+4. reverse words in a string
+5. number of subsequence
+6. minimize maximum pair sum in array
+7. count the number of good partitions
+8. minimum length of string after deleting similar ends
+9. maximum width ramp
+10. partition labels
+11. push dominoes
