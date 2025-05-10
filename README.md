@@ -146,3 +146,7 @@
 28. Maximum sum circular subarray
 29. Subarrays sums divisible by K
 30. Find the town judge
+
+# 10 May
+
+1. 974. Subarray Sums Divisible by K
