@@ -148,7 +148,9 @@
 1. 974. Subarray Sums Divisible by K
 2. 345. Reverse Vowels of a String
 
-3. remove dups from a sorted array
+# 11 May
+
+3. 26. Remove Duplicates from Sorted Array
 4. reverse words in a string
 5. number of subsequence
 6. minimize maximum pair sum in array
