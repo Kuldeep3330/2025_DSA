@@ -153,7 +153,7 @@
 3. 26. Remove Duplicates from Sorted Array
 4. 151. Reverse Words in a String
 5. 1498. Number of Subsequences That Satisfy the Given Sum Condition
-6. minimize maximum pair sum in array
+6. 1877. Minimize Maximum Pair Sum in Array
 7. count the number of good partitions
 8. minimum length of string after deleting similar ends
 9. maximum width ramp

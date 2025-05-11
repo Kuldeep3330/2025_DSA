@@ -107,3 +107,24 @@ public:
         return result;
     }
 };
+
+// 1877. Minimize Maximum Pair Sum in Array
+class Solution
+{
+public:
+    int minPairSum(vector<int> &nums)
+    {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        int low = 0, high = n - 1;
+        int result = 0;
+        while (low < high)
+        {
+            int sum = nums[low] + nums[high];
+            result = max(result, sum);
+            low++;
+            high--;
+        }
+        return result;
+    }
+};
