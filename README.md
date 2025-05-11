@@ -151,7 +151,7 @@
 # 11 May
 
 3. 26. Remove Duplicates from Sorted Array
-4. reverse words in a string
+4. 151. Reverse Words in a String
 5. number of subsequence
 6. minimize maximum pair sum in array
 7. count the number of good partitions
