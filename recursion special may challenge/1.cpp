@@ -113,3 +113,36 @@ public:
         return ans;
     }
 };
+
+//
+class Solution
+{
+public:
+    void helper(vector<int> &nums, vector<vector<int>> &ans, int i)
+    {
+        if (i == nums.size())
+        {
+            ans.push_back(nums);
+            return;
+        }
+        unordered_set<int> used;
+        for (int j = i; j < nums.size(); j++)
+        {
+            if (used.count(nums[j]))
+                continue; // Skip duplicates
+
+            used.insert(nums[j]);
+            swap(nums[i], nums[j]);
+            helper(nums, ans, i + 1);
+            swap(nums[i], nums[j]);
+        }
+    }
+    vector<vector<int>> permuteUnique(vector<int> &nums)
+    {
+        sort(nums.begin(), nums.end());
+        vector<vector<int>> ans;
+        int i = 0;
+        helper(nums, ans, i);
+        return ans;
+    }
+};
