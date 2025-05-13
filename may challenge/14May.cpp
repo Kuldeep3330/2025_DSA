@@ -27,7 +27,25 @@ public:
         return result;
     }
 };
-// 8. minimum length of string after deleting similar ends
+// 8. 1750. Minimum Length of String After Deleting Similar Ends
+class Solution
+{
+public:
+    int minimumLength(string s)
+    {
+        int i = 0;
+        int j = s.length() - 1;
+        while (i < j && s[i] == s[j])
+        {
+            char ch = s[i];
+            while (i < j && s[i] == ch)
+                i++;
+            while (j >= i && s[j] == ch)
+                j--;
+        }
+        return j - i + 1;
+    }
+};
 // 9. maximum width ramp
 // 10. partition labels
 // 11. push dominoes

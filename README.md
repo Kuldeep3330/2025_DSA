@@ -158,7 +158,7 @@
 # 14 May
 
 7. 2963. Count the Number of Good Partitions
-8. minimum length of string after deleting similar ends
+8. 1750. Minimum Length of String After Deleting Similar Ends
 9. maximum width ramp
 10. partition labels
 11. push dominoes
