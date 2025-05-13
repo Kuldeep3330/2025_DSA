@@ -49,3 +49,47 @@ public:
 // 9. maximum width ramp
 // 10. partition labels
 // 11. push dominoes
+
+/////////////SLIDING WINDOW/////////////////
+// Count Occurences of Anagrams(GFG)
+class Solution
+{
+public:
+    bool allZeroes(vector<int> &count)
+    {
+        for (auto &cnt : count)
+        {
+            if (cnt != 0)
+                return false;
+        }
+        return true;
+    }
+    int search(string &pat, string &txt)
+    {
+        // code here
+        vector<int> count(26, 0);
+        for (int i = 0; i < pat.length(); i++)
+        {
+            count[pat[i] - 'a']++;
+        }
+        int i = 0, j = 0, result = 0;
+        int k = pat.length();
+        while (j < txt.length())
+        {
+
+            count[txt[j] - 'a']--;
+
+            if (j - i + 1 == k)
+            {
+                if (allZeroes(count))
+                {
+                    result++;
+                }
+                count[txt[i] - 'a']++;
+                i++;
+            }
+            j++;
+        }
+        return result;
+    }
+};

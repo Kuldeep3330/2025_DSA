@@ -162,3 +162,31 @@
 9. maximum width ramp
 10. partition labels
 11. push dominoes
+
+# Sliding Window
+
+1. Count Occurences of Anagrams(GFG)
+2. Find all Anagram
+3. minimum size subarray sum
+4. first negative int
+5. minimum window substring
+6. contains dups
+7. count subarrays with fixed bounds
+8. Maximum number of vowels
+9. k Radius subarray
+10. Longest Subarray of 1's
+11. Maximize the confusion of an exam
+12. sliding window max
+13. frequency of mmost frequent element
+14. count complete substrings
+15. Binary subarrays with sum
+16. subarray product less than k
+17. length of longest subarray
+18. count subarrays whre max element appears at least k times
+19. subarrays with k different integers
+20. get equal substrings
+21. find subarray with bitwise AND closest to k
+22. Grumpy bookstore owner
+23. Longest Continuous subarray
+24. Minimum swaps to group all 1's
+25. count substrings
