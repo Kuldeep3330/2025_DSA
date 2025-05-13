@@ -154,7 +154,10 @@
 4. 151. Reverse Words in a String
 5. 1498. Number of Subsequences That Satisfy the Given Sum Condition
 6. 1877. Minimize Maximum Pair Sum in Array
-7. count the number of good partitions
+
+# 14 May
+
+7. 2963. Count the Number of Good Partitions
 8. minimum length of string after deleting similar ends
 9. maximum width ramp
 10. partition labels

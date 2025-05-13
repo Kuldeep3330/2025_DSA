@@ -1,23 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int subsetsWithDup(vector<int> &nums)
+struct Point
 {
-    int j = 0;
-    for (int i = 1; i < nums.size(); i++)
-    {
-        if (nums[i] != nums[j])
-        {
-            nums[++j] = nums[i];
-        }
-    }
-    nums.resize(j + 1);
-}
+    int x;
+    int y;
+};
 int main()
 {
+    Point arr[] = {{7, 8}, {3, 4}, {5, 6}};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    sort(arr, arr + n, [](Point a, Point b)
+         { return a.x < b.x; });
+    for (auto p : arr)
+    {
+        cout << p.x << " " << p.y << endl;
+    }
 
-    vector<int> nums = {1, 2, 2};
-    int ans = subsetsWithDup(nums);
-    cout << ans << endl;
     return 0;
 }
