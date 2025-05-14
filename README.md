@@ -169,7 +169,7 @@
 2. 438. Find All Anagrams in a String
 3. 209. Minimum Size Subarray Sum
 4. First negative in every window of size k(GFG)
-5. minimum window substring
+5. 76. Minimum Window Substring
 6. contains dups
 7. count subarrays with fixed bounds
 8. Maximum number of vowels

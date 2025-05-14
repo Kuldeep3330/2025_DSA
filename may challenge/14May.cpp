@@ -203,3 +203,48 @@ public:
         return result;
     }
 };
+
+// 76. Minimum Window Substring
+class Solution
+{
+public:
+    string minWindow(string s, string t)
+    {
+        if (t.length() > s.length())
+            return "";
+        unordered_map<char, int> um;
+        for (char &ch : t)
+            um[ch]++;
+
+        int requiredCount = t.length();
+        int i = 0, j = 0, start = 0;
+        int windowSize = INT_MAX;
+        while (j < s.length())
+        {
+            char ch = s[j];
+
+            if (um[ch] > 0)
+                requiredCount--;
+
+            um[ch]--;
+
+            while (requiredCount == 0)
+            {
+                int currSize = j - i + 1;
+                if (windowSize > currSize)
+                {
+                    windowSize = currSize;
+                    start = i;
+                }
+                um[s[i]]++;
+                if (um[s[i]] > 0)
+                {
+                    requiredCount++;
+                }
+                i++;
+            }
+            j++;
+        }
+        return windowSize == INT_MAX ? "" : s.substr(start, windowSize);
+    }
+};
