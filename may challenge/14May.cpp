@@ -93,3 +93,45 @@ public:
         return result;
     }
 };
+
+// 438. Find All Anagrams in a String
+class Solution
+{
+public:
+    bool allZeroes(vector<int> &count)
+    {
+        for (int cnt : count)
+        {
+            if (cnt != 0)
+                return false;
+        }
+        return true;
+    }
+    vector<int> findAnagrams(string s, string p)
+    {
+        vector<int> result;
+        vector<int> count(26, 0);
+        for (int i = 0; i < p.length(); i++)
+        {
+            count[p[i] - 'a']++;
+        }
+
+        int i = 0, j = 0;
+        int k = p.length();
+        while (j < s.length())
+        {
+            count[s[j] - 'a']--;
+            if (j - i + 1 == k)
+            {
+                if (allZeroes(count))
+                {
+                    result.push_back(i);
+                }
+                count[s[i] - 'a']++;
+                i++;
+            }
+            j++;
+        }
+        return result;
+    }
+};
