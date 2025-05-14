@@ -167,8 +167,8 @@
 
 1. Count Occurences of Anagrams(GFG)
 2. 438. Find All Anagrams in a String
-3. minimum size subarray sum
-4. first negative int
+3. 209. Minimum Size Subarray Sum
+4. First negative in every window of size k(GFG)
 5. minimum window substring
 6. contains dups
 7. count subarrays with fixed bounds

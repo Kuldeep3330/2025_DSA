@@ -135,3 +135,71 @@ public:
         return result;
     }
 };
+
+// 209. Minimum Size Subarray Sum
+class Solution
+{
+public:
+    int minSubArrayLen(int target, vector<int> &nums)
+    {
+        int n = nums.size(), i = 0, j = 0, minLength = INT_MAX;
+        int preSum = 0;
+        while (j < n)
+        {
+            preSum += nums[j];
+            while (preSum >= target)
+            {
+                minLength = min(minLength, j - i + 1);
+                preSum -= nums[i];
+                i++;
+            }
+            j++;
+        }
+        return minLength == INT_MAX ? 0 : minLength;
+    }
+};
+
+// First negative in every window of size k
+
+class Solution
+{
+public:
+    vector<int> firstNegInt(vector<int> &arr, int k)
+    {
+        // write code here
+        vector<int> result;
+        deque<int> dq;
+        int n = arr.size();
+        int i = 0, j = 0;
+
+        while (j < n)
+        {
+            if (arr[j] < 0)
+            {
+                dq.push_back(arr[j]);
+            }
+            if (j - i + 1 == k)
+            {
+                if (!dq.empty())
+                {
+                    result.push_back(dq.front());
+                }
+                else
+                {
+                    result.push_back(0);
+                }
+
+                // window shift krni hai
+                if (arr[i] < 0 && !dq.empty())
+                {
+                    dq.pop_front();
+                }
+                i++;
+            }
+
+            j++;
+        }
+
+        return result;
+    }
+};
