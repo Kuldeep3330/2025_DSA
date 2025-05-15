@@ -171,7 +171,7 @@
 4. First negative in every window of size k(GFG)
 5. 76. Minimum Window Substring
 6. 219. Contains Duplicate II
-7. count subarrays with fixed bounds
+7. 2444. Count Subarrays With Fixed Bounds
 8. Maximum number of vowels
 9. k Radius subarray
 10. Longest Subarray of 1's
