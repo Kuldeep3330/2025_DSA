@@ -170,7 +170,7 @@
 3. 209. Minimum Size Subarray Sum
 4. First negative in every window of size k(GFG)
 5. 76. Minimum Window Substring
-6. contains dups
+6. 219. Contains Duplicate II
 7. count subarrays with fixed bounds
 8. Maximum number of vowels
 9. k Radius subarray
