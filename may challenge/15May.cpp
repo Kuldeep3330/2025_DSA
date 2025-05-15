@@ -51,3 +51,42 @@ public:
         return ans;
     }
 };
+
+// 1456. Maximum Number of Vowels in a Substring of Given Length
+class Solution
+{
+public:
+    // bool isVowel(char c){
+    //     return c=='a' || c=='e' || c=='i' || c=='o' || c=='u' ;
+    // }
+    int maxVowels(string s, int k)
+    {
+        int n = s.length();
+        int right = 0, left = 0;
+        int maxV = INT_MIN;
+        int count = 0;
+
+        auto isVowel = [&](char c) { /// writting lamda function
+            return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+        };
+
+        while (right < n)
+        {
+            if (isVowel(s[right]))
+            {
+                count++;
+            }
+            if (right - left + 1 == k)
+            {
+                maxV = max(maxV, count);
+                if (maxV == k)
+                    return maxV;
+                if (isVowel(s[left]))
+                    count--;
+                left++;
+            }
+            right++;
+        }
+        return maxV;
+    }
+};
