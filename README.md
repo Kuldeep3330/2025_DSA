@@ -177,7 +177,10 @@
 7. 2444. Count Subarrays With Fixed Bounds
 8. 1456. Maximum Number of Vowels in a Substring of Given Length
 9. 2090. K Radius Subarray Averages
-10. Longest Subarray of 1's
+
+# 16 May
+
+10. 1493. Longest Subarray of 1's After Deleting One Element
 11. Maximize the confusion of an exam
 12. sliding window max
 13. frequency of mmost frequent element
