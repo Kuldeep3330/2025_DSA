@@ -176,7 +176,7 @@
 6. 219. Contains Duplicate II
 7. 2444. Count Subarrays With Fixed Bounds
 8. 1456. Maximum Number of Vowels in a Substring of Given Length
-9. k Radius subarray
+9. 2090. K Radius Subarray Averages
 10. Longest Subarray of 1's
 11. Maximize the confusion of an exam
 12. sliding window max

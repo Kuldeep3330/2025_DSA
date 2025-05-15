@@ -90,3 +90,40 @@ public:
         return maxV;
     }
 };
+
+// 2090. K Radius Subarray Averages
+class Solution
+{
+public:
+    vector<int> getAverages(vector<int> &nums, int k)
+    {
+        int n = nums.size();
+        vector<int> result(n, -1);
+
+        if (k == 0)
+            return nums; // Edge case: window size = 1
+        if (n < 2 * k + 1)
+            return result; // Not enough room
+
+        vector<long long> prefix(n, 0); // prefix[i] = sum of nums[0] to nums[i-1]
+        prefix[0] = nums[0];
+        for (int i = 1; i < n; i++)
+        {
+            prefix[i] = prefix[i - 1] + nums[i];
+        }
+
+        for (int i = k; i < n - k; i++)
+        {
+            int leftIdx = i - k;
+            int rightIdx = i + k;
+            long long sum = prefix[rightIdx];
+            if (leftIdx > 0)
+            {
+                sum -= prefix[leftIdx - 1];
+            }
+            result[i] = sum / (2 * k + 1);
+        }
+
+        return result;
+    }
+};
