@@ -181,7 +181,7 @@
 # 16 May
 
 10. 1493. Longest Subarray of 1's After Deleting One Element
-11. Maximize the confusion of an exam
+11. 2024. Maximize the Confusion of an Exam
 12. sliding window max
 13. frequency of mmost frequent element
 14. count complete substrings
