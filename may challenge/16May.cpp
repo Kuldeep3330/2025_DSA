@@ -158,3 +158,39 @@ public:
         return result;
     }
 };
+
+// 239. Sliding Window Maximum
+class Solution
+{
+public:
+    vector<int> maxSlidingWindow(vector<int> &nums, int k)
+    {
+        int n = nums.size();
+        vector<int> result;
+        deque<int> dq;
+        int i = 0, j = 0;
+
+        while (j < n)
+        {
+            while (!dq.empty() && dq.back() < nums[j])
+                dq.pop_back();
+            dq.push_back(nums[j]);
+
+            while (j - i + 1 == k)
+            {
+                if (!dq.empty())
+                {
+
+                    result.push_back(dq.front());
+                }
+                if (!dq.empty() && nums[i] == dq.front())
+                {
+                    dq.pop_front();
+                }
+                i++;
+            }
+            j++;
+        }
+        return result;
+    }
+};

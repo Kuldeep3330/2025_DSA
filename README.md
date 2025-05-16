@@ -182,7 +182,9 @@
 
 10. 1493. Longest Subarray of 1's After Deleting One Element
 11. 2024. Maximize the Confusion of an Exam
-12. sliding window max
+12. 239. Sliding Window Maximum
+         similar problem:-
+    # 1. First negative in every window of size k(GFG)
 13. frequency of mmost frequent element
 14. count complete substrings
 15. Binary subarrays with sum
