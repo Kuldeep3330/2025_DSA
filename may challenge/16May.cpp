@@ -81,3 +81,80 @@ public:
         return result;
     }
 };
+
+// 2024. Maximize the Confusion of an Exam(sliding window)
+class Solution
+{
+public:
+    int maxConsecutiveAnswers(string answerKey, int k)
+    {
+        int n = answerKey.length();
+        int result = INT_MIN;
+        int j = 0, i = 0;
+        int falseCount = 0;
+        while (j < n)
+        {
+            if (answerKey[j] == 'F')
+            {
+                falseCount++;
+            }
+            while (falseCount > k)
+            {
+                if (answerKey[i] == 'F')
+                {
+                    falseCount--;
+                }
+                i++;
+            }
+
+            result = max(result, j - i + 1);
+            j++;
+        }
+        i = 0, j = 0, falseCount = 0;
+        while (j < n)
+        {
+            if (answerKey[j] == 'T')
+            {
+                falseCount++;
+            }
+            while (falseCount > k)
+            {
+                if (answerKey[i] == 'T')
+                {
+                    falseCount--;
+                }
+                i++;
+            }
+
+            result = max(result, j - i + 1);
+            j++;
+        }
+        return result;
+    }
+};
+// optimized code
+class Solution
+{
+public:
+    int maxConsecutiveAnswers(string answerKey, int k)
+    {
+        int n = answerKey.length();
+        int result = INT_MIN;
+        int j = 0, i = 0;
+        unordered_map<int, int> um;
+
+        while (j < n)
+        {
+            um[answerKey[j]]++;
+            while (min(um['T'], um['F']) > k)
+            {
+                um[answerKey[i]]--;
+                i++;
+            }
+            result = max(result, j - i + 1);
+            j++;
+        }
+
+        return result;
+    }
+};
