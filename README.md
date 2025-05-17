@@ -189,16 +189,17 @@
 # 17 May
 
 1. 75. Sort Colors
-2. frequency of mmost frequent element
-3. count complete substrings
-4. Binary subarrays with sum
-5. subarray product less than k
-6. length of longest subarray
-7. count subarrays whre max element appears at least k times
-8. subarrays with k different integers
-9. get equal substrings
-10. find subarray with bitwise AND closest to k
-11. Grumpy bookstore owner
-12. Longest Continuous subarray
-13. Minimum swaps to group all 1's
-14. count substrings
+2. Sort the given array after applying the given equation(GFG)
+3. frequency of mmost frequent element
+4. count complete substrings
+5. Binary subarrays with sum
+6. subarray product less than k
+7. length of longest subarray
+8. count subarrays whre max element appears at least k times
+9. subarrays with k different integers
+10. get equal substrings
+11. find subarray with bitwise AND closest to k
+12. Grumpy bookstore owner
+13. Longest Continuous subarray
+14. Minimum swaps to group all 1's
+15. count substrings
