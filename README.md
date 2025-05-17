@@ -185,16 +185,20 @@
 12. 239. Sliding Window Maximum
          similar problem:-
     # 1. First negative in every window of size k(GFG)
-13. frequency of mmost frequent element
-14. count complete substrings
-15. Binary subarrays with sum
-16. subarray product less than k
-17. length of longest subarray
-18. count subarrays whre max element appears at least k times
-19. subarrays with k different integers
-20. get equal substrings
-21. find subarray with bitwise AND closest to k
-22. Grumpy bookstore owner
-23. Longest Continuous subarray
-24. Minimum swaps to group all 1's
-25. count substrings
+
+# 17 May
+
+1. 75. Sort Colors
+2. frequency of mmost frequent element
+3. count complete substrings
+4. Binary subarrays with sum
+5. subarray product less than k
+6. length of longest subarray
+7. count subarrays whre max element appears at least k times
+8. subarrays with k different integers
+9. get equal substrings
+10. find subarray with bitwise AND closest to k
+11. Grumpy bookstore owner
+12. Longest Continuous subarray
+13. Minimum swaps to group all 1's
+14. count substrings
