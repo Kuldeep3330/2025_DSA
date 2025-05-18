@@ -196,15 +196,16 @@
 3. 1838. Frequency of the Most Frequent Element
 4. Level Order in spiral form(GFG)
 5. 52. N-Queens II
-6. count complete substrings
-7. Binary subarrays with sum
-8. subarray product less than k
-9. length of longest subarray
-10. count subarrays whre max element appears at least k times
-11. subarrays with k different integers
-12. get equal substrings
-13. find subarray with bitwise AND closest to k
-14. Grumpy bookstore owner
-15. Longest Continuous subarray
-16. Minimum swaps to group all 1's
-17. count substrings
+6. 51. N-Queens
+7. count complete substrings
+8. Binary subarrays with sum
+9. subarray product less than k
+10. length of longest subarray
+11. count subarrays whre max element appears at least k times
+12. subarrays with k different integers
+13. get equal substrings
+14. find subarray with bitwise AND closest to k
+15. Grumpy bookstore owner
+16. Longest Continuous subarray
+17. Minimum swaps to group all 1's
+18. count substrings
