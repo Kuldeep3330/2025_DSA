@@ -108,3 +108,74 @@ public:
         return result;
     }
 };
+
+// 52. N-Queens II
+class Solution
+{
+    bool isSafe(vector<string> board, int row, int col, int n)
+    {
+        // horizontal
+        for (int i = 0; i < n; i++)
+        {
+            if (board[row][i] == 'Q')
+            {
+                return false;
+            }
+        }
+        // vertical
+        for (int i = 0; i < n; i++)
+        {
+            if (board[i][col] == 'Q')
+            {
+                return false;
+            }
+        }
+        // left diagonal(only upward i.e before curr)
+        for (int i = row, j = col; i >= 0 && j >= 0; i--, j--)
+        {
+            if (board[i][j] == 'Q')
+            {
+                return false;
+            }
+        }
+        // right
+        for (int i = row, j = col; i >= 0 && j < n; i--, j++)
+        {
+            if (board[i][j] == 'Q')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    void nQueens(int row, int n, vector<vector<string>> &ans,
+                 vector<string> &board, int &result)
+    {
+        if (row == n)
+        {
+            ans.push_back({board});
+            result++;
+            return;
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (isSafe(board, row, i, n))
+            {
+                board[row][i] = 'Q';
+                nQueens(row + 1, n, ans, board, result);
+                board[row][i] = '.';
+            }
+        }
+    }
+
+public:
+    int totalNQueens(int n)
+    {
+        vector<string> board(n, string(n, '.'));
+        vector<vector<string>> ans;
+        int result = 0;
+        nQueens(0, n, ans, board, result);
+
+        return result;
+    }
+};
