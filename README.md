@@ -203,7 +203,7 @@
 
 8. 930. Binary Subarrays With Sum
 9. 713. Subarray Product Less Than K
-10. length of longest subarray
+10. 2958. Length of Longest Subarray With at Most K Frequency
 11. count subarrays whre max element appears at least k times
 12. subarrays with k different integers
 13. get equal substrings
