@@ -202,7 +202,7 @@
 # 19 May
 
 8. 930. Binary Subarrays With Sum
-9. subarray product less than k
+9. 713. Subarray Product Less Than K
 10. length of longest subarray
 11. count subarrays whre max element appears at least k times
 12. subarrays with k different integers
