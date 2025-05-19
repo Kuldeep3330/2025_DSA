@@ -198,7 +198,10 @@
 5. 52. N-Queens II
 6. 51. N-Queens
 7. count complete substrings
-8. Binary subarrays with sum
+
+# 19 May
+
+8. 930. Binary Subarrays With Sum
 9. subarray product less than k
 10. length of longest subarray
 11. count subarrays whre max element appears at least k times
