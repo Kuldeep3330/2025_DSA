@@ -205,10 +205,14 @@
 9. 713. Subarray Product Less Than K
 10. 2958. Length of Longest Subarray With at Most K Frequency
 11. 2962. Count Subarrays Where Max Element Appears at Least K Times
-12. subarrays with k different integers
-13. get equal substrings
-14. find subarray with bitwise AND closest to k
-15. Grumpy bookstore owner
-16. Longest Continuous subarray
-17. Minimum swaps to group all 1's
-18. count substrings
+
+# 20 may
+
+12. Burning Tree(GFG)
+13. subarrays with k different integers
+14. get equal substrings
+15. find subarray with bitwise AND closest to k
+16. Grumpy bookstore owner
+17. Longest Continuous subarray
+18. Minimum swaps to group all 1's
+19. count substrings
