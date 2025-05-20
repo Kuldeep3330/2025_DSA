@@ -6,5 +6,6 @@
         "regex": "cpp",
         "utility": "cpp",
         "valarray": "cpp"
-    }
+    },
+    "liveServer.settings.CustomBrowser": "chrome"
 }
