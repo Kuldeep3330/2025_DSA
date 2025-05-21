@@ -216,3 +216,7 @@
 17. Longest Continuous subarray
 18. Minimum swaps to group all 1's
 19. count substrings
+
+# 21 May
+
+1. Kth Smallest Number in Multiplication Table(GFG)
