@@ -221,3 +221,7 @@
 
 1. Kth Smallest Number in Multiplication Table(GFG)
 2. 3024. Type of Triangle
+
+# 22 May
+
+1. Minimum Deletions(GFG)
