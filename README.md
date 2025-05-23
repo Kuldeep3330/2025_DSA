@@ -226,3 +226,8 @@
 
 1. Minimum Deletions(GFG)
 2. 3362. Zero Array Transformation III
+
+# 23 May
+
+1. Dice throw(GFG)
+2.
