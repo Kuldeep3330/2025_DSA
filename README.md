@@ -235,3 +235,4 @@
 # 24 May
 
 1. Sum of all substrings of a number(GFG)
+2. 2942. Find Words Containing Character
