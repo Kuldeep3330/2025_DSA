@@ -231,3 +231,7 @@
 
 1. Dice throw(GFG)
 2. 3068. Find the Maximum Sum of Node Values
+
+# 24 May
+
+1. Sum of all substrings of a number(GFG)
