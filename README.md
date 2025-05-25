@@ -240,3 +240,4 @@
 # 25 May
 
 1. 2131. Longest Palindrome by Concatenating Two Letter Words
+2. Pythagorean Triplet(GFG)
