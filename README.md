@@ -241,3 +241,7 @@
 
 1. 2131. Longest Palindrome by Concatenating Two Letter Words
 2. Pythagorean Triplet(GFG)
+
+# 26 May
+
+1.37. Sudoku Solver
