@@ -67,3 +67,48 @@ public:
         helper(board, 0, 0);
     }
 };
+
+// Rat in a Maze Problem - I(GFG)
+
+class Solution
+{
+public:
+    void helper(vector<vector<int>> &maze, int row, int col, string path, vector<string> &ans, vector<vector<bool>> &vis)
+    {
+        int n = maze.size();
+        if (row < 0 || col < 0 || row >= n || col >= n || maze[row][col] == 0 || vis[row][col])
+        {
+            return;
+        }
+
+        if (row == n - 1 && col == n - 1)
+        {
+            ans.push_back(path);
+            return;
+        }
+
+        vis[row][col] = true;
+
+        helper(maze, row + 1, col, path + "D", ans, vis); // Down
+        helper(maze, row - 1, col, path + "U", ans, vis); // Up
+        helper(maze, row, col - 1, path + "L", ans, vis); // Left
+        helper(maze, row, col + 1, path + "R", ans, vis); // Right
+
+        vis[row][col] = false; // Backtrack
+    }
+
+    vector<string> ratInMaze(vector<vector<int>> &maze)
+    {
+        int n = maze.size();
+        vector<string> ans;
+
+        if (maze[0][0] == 0 || maze[n - 1][n - 1] == 0)
+            return ans;
+
+        vector<vector<bool>> vis(n, vector<bool>(n, false));
+        helper(maze, 0, 0, "", ans, vis);
+        sort(ans.begin(), ans.end());
+
+        return ans;
+    }
+};

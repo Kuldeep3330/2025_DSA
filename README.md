@@ -244,4 +244,5 @@
 
 # 26 May
 
-1.37. Sudoku Solver
+1. 37. Sudoku Solver
+2. Rat in a Maze Problem - I(GFG)
