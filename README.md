@@ -246,3 +246,7 @@
 
 1. 37. Sudoku Solver
 2. Rat in a Maze Problem - I(GFG)
+
+# 28 May
+
+1. 74. Search a 2D Matrix
