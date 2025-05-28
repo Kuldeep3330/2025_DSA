@@ -250,3 +250,4 @@
 # 28 May
 
 1. 74. Search a 2D Matrix
+2. 540. Single Element in a Sorted Array
