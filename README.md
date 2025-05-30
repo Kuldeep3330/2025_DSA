@@ -255,3 +255,4 @@
 # 30 May
 
 1. 2187. Minimum Time to Complete Trips
+2. 875. Koko Eating Bananas
