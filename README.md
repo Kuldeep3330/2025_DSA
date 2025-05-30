@@ -251,3 +251,7 @@
 
 1. 74. Search a 2D Matrix
 2. 540. Single Element in a Sorted Array
+
+# 30 May
+
+1. 2187. Minimum Time to Complete Trips
