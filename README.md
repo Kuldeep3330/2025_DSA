@@ -256,3 +256,7 @@
 
 1. 2187. Minimum Time to Complete Trips
 2. 875. Koko Eating Bananas
+
+# 31 MAy
+
+1. 2439. Minimize Maximum of Array
