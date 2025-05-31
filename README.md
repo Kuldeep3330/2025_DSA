@@ -260,3 +260,4 @@
 # 31 MAy
 
 1. 2439. Minimize Maximum of Array
+2. 1802. Maximum Value at a Given Index in a Bounded Array
