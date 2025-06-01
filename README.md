@@ -263,3 +263,9 @@
 2. 1802. Maximum Value at a Given Index in a Bounded Array
 3. 2448. Minimum Cost to Make Array Equal
 4. 852. Peak Index in a Mountain Array
+
+######## cheers to me May has been passed successsfully ########
+
+# 01 Junw
+
+1. Count pairs Sum in matrices(GFG)
