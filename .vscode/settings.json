@@ -5,7 +5,8 @@
         "initializer_list": "cpp",
         "regex": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iostream": "cpp"
     },
     "liveServer.settings.CustomBrowser": "chrome"
 }

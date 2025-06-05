@@ -278,3 +278,7 @@
 # 04 June
 
 1.  Coin Change (Count Ways)(GFG)
+
+# 05 June
+
+1. 1061. Lexicographically Smallest Equivalent String
