@@ -282,3 +282,4 @@
 # 05 June
 
 1. 1061. Lexicographically Smallest Equivalent String
+2. Count the paths
