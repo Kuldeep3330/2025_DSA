@@ -283,3 +283,8 @@
 
 1. 1061. Lexicographically Smallest Equivalent String
 2. Count the paths
+
+# 06 June
+
+1. 2434. Using a Robot to Print the Lexicographically Smallest String
+2. Search Pattern (Rabin-Karp Algorithm)

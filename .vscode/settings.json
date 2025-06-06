@@ -6,7 +6,8 @@
         "regex": "cpp",
         "utility": "cpp",
         "valarray": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "vector": "cpp"
     },
     "liveServer.settings.CustomBrowser": "chrome"
 }
