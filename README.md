@@ -292,3 +292,4 @@
 # 08 June
 
 1. 88. Merge Sorted Array
+2. 27. Remove Element
