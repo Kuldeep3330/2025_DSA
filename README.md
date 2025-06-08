@@ -288,3 +288,7 @@
 
 1. 2434. Using a Robot to Print the Lexicographically Smallest String
 2. Search Pattern (Rabin-Karp Algorithm)
+
+# 08 June
+
+1. 88. Merge Sorted Array

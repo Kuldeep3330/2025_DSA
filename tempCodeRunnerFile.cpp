@@ -1,19 +1,49 @@
 #include <bits/stdc++.h>
 using namespace std;
-void print_n(int n)
+bool myCompare(pair<int, int> a, pair<int, int> b)
 {
-    if (n == 1)
-    {
-        cout << n << " ";
-        return;
-    }
-    print_n(n - 1);
-    cout << n << " ";
-    print_n(n - 1);
+    return (a.second < b.second);
 }
+int maxActivities(pair<int, int> arr[], int n)
+{
+    sort(arr, arr + n, myCompare);
+    int prev = 0;
+    int res = 1;
+    for (int curr = 1; curr < n; curr++)
+    {
+        if (arr[curr].first >= arr[prev].second)
+        {
+            res++;
+            prev = curr;
+        }
+    }
+    return res;
+}
+
+bool myCompare(pair<int, int> a, pair<int, int> b)
+{
+    return (a.second < b.second);
+}
+int maxActivities(pair<int, int> arr[], int n)
+{
+    sort(arr, arr + n, [](pair<int, int> a, pair<int, int> b)
+         { return (a.second < b.second); });
+    int prev = 0;
+    int res = 1;
+    for (int curr = 1; curr < n; curr++)
+    {
+        if (arr[curr].first >= arr[prev].second)
+        {
+            res++;
+            prev = curr;
+        }
+    }
+    return res;
+}
+
 int main()
 {
-    print_n(3);
+    // print_n(3);
 
     return 0;
 }
