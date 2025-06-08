@@ -25,3 +25,28 @@ public:
         return nums.size();
     }
 };
+
+// 386. Lexicographical Numbers
+class Solution
+{
+public:
+    vector<int> lexicalOrder(int n)
+    {
+        vector<string> s;
+        s.reserve(n);
+
+        for (int i = 1; i <= n; i++)
+        {
+            s.push_back(to_string(i)); // "1", "2", "10", ...
+        }
+        sort(s.begin(), s.end()); // lexicographically sort
+
+        vector<int> ans;
+        ans.reserve(n);
+        for (auto &str : s)
+        {
+            ans.push_back(stoi(str)); // convert back to int
+        }
+        return ans;
+    }
+};

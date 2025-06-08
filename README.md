@@ -293,3 +293,4 @@
 
 1. 88. Merge Sorted Array
 2. 27. Remove Element
+3. 386. Lexicographical Numbers
