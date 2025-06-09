@@ -294,3 +294,7 @@
 1. 88. Merge Sorted Array
 2. 27. Remove Element
 3. 386. Lexicographical Numbers
+
+# 09 June
+
+1. 52. N-Queens II
