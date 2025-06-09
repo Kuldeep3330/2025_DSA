@@ -298,3 +298,4 @@
 # 09 June
 
 1. 52. N-Queens II
+2. 440. K-th Smallest in Lexicographical Order
