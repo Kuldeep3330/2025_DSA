@@ -299,3 +299,7 @@
 
 1. 52. N-Queens II
 2. 440. K-th Smallest in Lexicographical Order
+
+# 10 June
+
+1. 3442. Maximum Difference Between Even and Odd Frequency I
