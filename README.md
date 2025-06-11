@@ -303,3 +303,7 @@
 # 10 June
 
 1. 3442. Maximum Difference Between Even and Odd Frequency I
+
+# 11 June
+
+1. Remove the balls
