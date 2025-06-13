@@ -317,3 +317,4 @@
 # 13 June
 
 1. 121. Best Time to Buy and Sell Stock
+2. 2616. Minimize the Maximum Difference of Pairs
