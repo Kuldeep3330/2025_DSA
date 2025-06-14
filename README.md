@@ -319,3 +319,7 @@
 1. 121. Best Time to Buy and Sell Stock
 2. 2616. Minimize the Maximum Difference of Pairs
 3. Koko Eating Bananas(GFG)
+
+# 14 June
+
+1. Symmetric Tree
