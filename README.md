@@ -328,3 +328,4 @@
 # 15 June
 
 1. 238. Product of Array Except Self
+2. Smallest Divisor(GFG)
