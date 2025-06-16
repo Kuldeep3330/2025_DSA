@@ -329,3 +329,7 @@
 
 1. 238. Product of Array Except Self
 2. Smallest Divisor(GFG)
+
+# 16 June
+
+1. 2016. Maximum Difference Between Increasing Elements
