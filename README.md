@@ -348,3 +348,7 @@
 
 1. Case-specific Sorting of Strings
 2. 43. Multiply Strings
+
+# 20 June
+
+1. 948. Bag of Tokens
