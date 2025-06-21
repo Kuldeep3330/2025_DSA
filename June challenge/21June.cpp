@@ -39,3 +39,34 @@ public:
         }
     }
 };
+// 1578. Minimum Time to Make Rope Colorful
+class Solution
+{
+public:
+    int minCost(string colors, vector<int> &neededTime)
+    {
+        vector<pair<char, int>> vec;
+        for (int i = 0; i < colors.length(); i++)
+        {
+            vec.push_back({colors[i], neededTime[i]});
+        }
+
+        int ans = 0;
+        pair<char, int> prev = vec[0];
+
+        for (int i = 1; i < vec.size(); i++)
+        {
+            if (vec[i].first == prev.first)
+            {
+                ans += min(prev.second, vec[i].second);
+                prev.second = max(prev.second, vec[i].second);
+            }
+            else
+            {
+                prev = vec[i];
+            }
+        }
+
+        return ans;
+    }
+};
