@@ -369,3 +369,7 @@
 
 1. 2081. Sum of k-Mirror Numbers
 2. Minimum sum
+
+# 24 June
+
+1. 2200. Find All K-Distant Indices in an Array
