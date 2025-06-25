@@ -378,3 +378,4 @@
 # 25 June
 
 1. 2040. Kth Smallest Product of Two Sorted Arrays
+2. Check if frequencies can be equal
