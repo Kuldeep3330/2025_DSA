@@ -374,3 +374,7 @@
 
 1. 2200. Find All K-Distant Indices in an Array
 2. Lexicographically Largest String After K Deletions
+
+# 25 June
+
+1. 2040. Kth Smallest Product of Two Sorted Arrays
