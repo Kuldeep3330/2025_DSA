@@ -384,3 +384,7 @@
 
 1. Game with String
 2. 2311. Longest Binary Subsequence Less Than or Equal to K
+
+# 27 june
+
+1. Mobile numeric keypad
