@@ -389,3 +389,11 @@
 
 1. Mobile numeric keypad
 2. 2014. Longest Subsequence Repeated k Times
+
+# 28 June
+
+1. 2099. Find Subsequence of Length K With the Largest Sum
+
+# 29 June
+
+1. 1498. Number of Subsequences That Satisfy the Given Sum Condition
