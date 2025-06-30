@@ -401,3 +401,4 @@
 # 30 june
 
 1. 594. Longest Harmonious Subsequence
+2. Max min Height(GFG)
