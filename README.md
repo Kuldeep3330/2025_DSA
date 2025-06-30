@@ -397,3 +397,7 @@
 # 29 June
 
 1. 1498. Number of Subsequences That Satisfy the Given Sum Condition
+
+# 30 june
+
+1. 594. Longest Harmonious Subsequence
