@@ -402,3 +402,7 @@
 
 1. 594. Longest Harmonious Subsequence
 2. Max min Height(GFG)
+
+# 1 July
+
+1. 3330. Find the Original Typed String I
