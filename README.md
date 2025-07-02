@@ -406,3 +406,7 @@
 # 1 July
 
 1. 3330. Find the Original Typed String I
+
+# 2 July
+
+1. 3333. Find the Original Typed String II
