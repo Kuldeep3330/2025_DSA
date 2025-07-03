@@ -411,3 +411,7 @@
 
 1. 3333. Find the Original Typed String II
 2. Longest subarray with Atmost two distinct integers(GFG)
+
+# 3 Junly
+
+1. Longest Substring with K Uniques(GFG)
