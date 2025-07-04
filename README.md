@@ -412,6 +412,10 @@
 1. 3333. Find the Original Typed String II
 2. Longest subarray with Atmost two distinct integers(GFG)
 
-# 3 Junly
+# 3 July
 
 1. Longest Substring with K Uniques(GFG)
+
+# 4 July
+
+1. 3307. Find the K-th Character in String Game II
