@@ -419,3 +419,7 @@
 # 4 July
 
 1. 3307. Find the K-th Character in String Game II
+
+# 5 July
+
+1. 1394. Find Lucky Integer in an Array
