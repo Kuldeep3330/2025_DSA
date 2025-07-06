@@ -423,3 +423,7 @@
 # 5 July
 
 1. 1394. Find Lucky Integer in an Array
+
+# 6 July
+
+1. 1865. Finding Pairs With a Certain Sum
