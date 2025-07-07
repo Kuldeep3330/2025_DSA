@@ -427,3 +427,7 @@
 # 6 July
 
 1. 1865. Finding Pairs With a Certain Sum
+
+# 7 July
+
+1. 1353. Maximum Number of Events That Can Be Attended
