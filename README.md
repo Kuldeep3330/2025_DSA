@@ -431,3 +431,7 @@
 # 7 July
 
 1. 1353. Maximum Number of Events That Can Be Attended
+
+# 8 July
+
+1. 1751. Maximum Number of Events That Can Be Attended II
