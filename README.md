@@ -435,3 +435,7 @@
 # 8 July
 
 1. 1751. Maximum Number of Events That Can Be Attended II
+
+# 9 July
+
+1. 3439. Reschedule Meetings for Maximum Free Time I
