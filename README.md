@@ -443,3 +443,7 @@
 # 10 July
 
 1. 3440. Reschedule Meetings for Maximum Free Time II
+
+# 15 July
+
+1. 3136. Valid Word
