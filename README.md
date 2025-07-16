@@ -447,3 +447,7 @@
 # 15 July
 
 1. 3136. Valid Word
+
+# 16 July
+
+1. 3201. Find the Maximum Length of Valid Subsequence I
