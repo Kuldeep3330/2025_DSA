@@ -451,3 +451,7 @@
 # 16 July
 
 1. 3201. Find the Maximum Length of Valid Subsequence I
+
+# 17 July
+
+1. 3202. Find the Maximum Length of Valid Subsequence II
