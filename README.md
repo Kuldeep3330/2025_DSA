@@ -455,3 +455,7 @@
 # 17 July
 
 1. 3202. Find the Maximum Length of Valid Subsequence II
+
+# 18 July
+
+1. 2163. Minimum Difference in Sums After Removal of Elements
