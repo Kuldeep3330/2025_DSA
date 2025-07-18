@@ -94,16 +94,98 @@ Node *deleteLast(Node *head)
     return head;
 }
 
+Node *sortedInsert(Node *head, int x)
+{
+    Node *temp = new Node(x);
+    Node *curr = head;
+    while (curr->next->data < x)
+    {
+
+        curr = curr->next;
+    }
+    temp->next = curr->next;
+    curr->next = temp;
+    return head;
+}
+
+// middle of the linked list
+int middleOfLL(Node *head)
+{
+    Node *slow = head;
+    Node *fast = head;
+    while (fast != NULL && fast->next != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    return slow->data;
+}
+// find nth node from end of Linked List
+int nthFromEnd(Node *head, int n)
+{
+    Node *fast = head;
+    while (n != 0)
+    {
+        fast = fast->next;
+        n--;
+    }
+    Node *slow = head;
+    while (fast != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next;
+    }
+    return slow->data;
+}
+
+// reverse the LInked List
+Node *reverseLL(Node *head)
+{
+    Node *prev = NULL;
+    Node *curr = head;
+    while (curr != NULL)
+    {
+        Node *next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+}
+
+void removeDups(Node *head)
+{
+    Node *curr = head;
+    while (curr != NULL && curr->next != NULL)
+    {
+        if (curr->data == curr->next->data)
+        {
+            Node *temp = curr->next;
+            curr->next = curr->next->next;
+            delete (temp);
+        }
+        else
+        {
+            curr = curr->next;
+        }
+    }
+}
 int main()
 {
     Node *head = new Node(10);
     head->next = new Node(30);
     head->next->next = new Node(50);
     head->next->next->next = new Node(70);
-    head = insertAtGvnPos(head, 5, 20);
-    head = deleteFirst(head);
+    head = sortedInsert(head, 35);
+    head = reverseLL(head);
+    // cout << nthFromEnd(head, 2) << "\t";
+
+    // cout << middleOfLL(head) << endl;
+    // head = insertAtGvnPos(head, 5, 20);
+    // head = deleteFirst(head);
     // head = insertAtBeg(head, 5);
     // head = insertAtEnd(head, 40);
+
     traverse(head);
 
     return 0;
