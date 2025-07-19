@@ -1,78 +1,103 @@
-class MyStack{
-    constructor(){
-        this.arr=[]
-    }
+// class Stack {
+//     constructor() {
+//         this.items = [];
+//     }
 
-    push(x){
-        this.arr.push(x);
+//     push(x) {
+//         this.items.push(x);
+//     }
+
+//     pop() {
+//         return this.items.pop();
+//     }
+
+//     top() {
+//         return this.items[this.items.length - 1];
+//     }
+
+//     isEmpty() {
+//         return this.items.length === 0;
+//     }
+// }
+
+// // Main logic
+// const st = new Stack();
+// st.push(10);
+// st.push(30);
+// st.push(35);
+// st.push(40);
+
+// while (!st.isEmpty()) {
+//     console.log(st.top() + " ");
+//     st.pop();
+// }
+
+
+// const s=[]
+// s.push(10)
+// s.push(20)
+// s.push(30)
+
+
+// while(s.length !== 0){
+//     console.log(s.pop());
+// }
+
+// class Stack extends Array{
+//     top(){
+//         return this[this.length-1]
+//     }
+//     isEmpty(){
+//         return this.length===0
+//     }
+// }
+
+// const st= new Stack()
+// st.push(10);
+// st.push(30);
+// st.push(35);
+// st.push(40);
+// while (!st.isEmpty())
+// {
+//     console.log(st.top()+" ");
+    
+//     st.pop();
+// }
+
+//balanced parenthesis
+class Stack extends Array{
+    top(){
+        return this[this.length-1]
     }
-    pop(){
-        if(this.isEmpty()){
-            throw new Error("underflow")
-        }
-        return this.arr.pop();
-    }
-    size(){
-        return this.arr.length;
-    }
-    isEmpty(){
-        return this.arr.length===0
-    }
-    peek(){
-        if(this.isEmpty()){
-            throw new Error('Stack is empty')
-        }
-        return this.arr[this.arr.length-1]
+    empty(){
+        return this.length===0
     }
 }
 
-//linked List implementation
-class Node{
-    constructor(data){
-        this.data=data
-        this.next=null
-    }
+function match(a, b){
+    return ((a==='(' && b===')') || (a==='[' && b===']') || (a==='{' && b==='}'))
 }
 
-class MyStack{
-    constructor(){
-        this.head=null
-        this.sz=0
-    }
-    push(x){
-        const temp= new Node(x)
-        temp.next=this.head;
-        this.head=temp
-        this.sz++;
-    }
-    pop(){
-        if(this.head===null){
-            throw new Error("Stack underflow")
+function balanced(str){
+    const s=new Stack();
+    for (const x of str) {
+        if(x==='(' ||  x==='[' || x==='{' ){
+            s.push(x)
+        }else{
+            if(s.empty() || !match(s.top(), x)){
+                return false;
+            }else{
+                s.pop();
+            }
         }
-        const res=this.head.data;
-        this.head=this.head.next
-        this.sz--;
-        return res;
     }
-    peek(){
-        if(this.head===null){
-            throw new Error("Stack underflow")
-        }
-        return this.head.data
-    }
-    size(){
-        return this.sz;
-    }
+    return s.empty();
 
-    isEmpty(){
-        return this.sz===0
-    }
+
 }
-
-const s= new MyStack()
-s.push(10);
-s.push(20);
-console.log(s.peek());   
-console.log(s.pop());   
-console.log(s.size());   
-console.log(s.isEmpty());
+console.log(balanced("(())"));        // true
+console.log(balanced("({[]})"));      // true
+console.log(balanced("([)]"));        // false
+console.log(balanced("("));           // false
+console.log(balanced(""));            // true
+console.log(balanced("{[()]()}"));    // true
