@@ -459,3 +459,7 @@
 # 18 July
 
 1. 2163. Minimum Difference in Sums After Removal of Elements
+
+# 19 July
+
+1. 1233. Remove Sub-Folders from the Filesystem
