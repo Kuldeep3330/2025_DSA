@@ -463,3 +463,7 @@
 # 19 July
 
 1. 1233. Remove Sub-Folders from the Filesystem
+
+# 20 July
+
+1. 1948. Delete Duplicate Folders in System
