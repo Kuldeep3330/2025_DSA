@@ -8,7 +8,7 @@ class MyStack{
     }
     pop(){
         if(this.isEmpty()){
-            throw new Error("underflow")
+            throw new Error("underflow ")
         }
         return this.arr.pop();
     }

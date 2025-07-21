@@ -467,3 +467,7 @@
 # 20 July
 
 1. 1948. Delete Duplicate Folders in System
+
+# 21 July
+
+1. 1957. Delete Characters to Make Fancy String
