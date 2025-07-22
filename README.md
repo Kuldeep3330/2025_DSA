@@ -471,3 +471,7 @@
 # 21 July
 
 1. 1957. Delete Characters to Make Fancy String
+
+# 22 July
+
+1. 1695. Maximum Erasure Value
