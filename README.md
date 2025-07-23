@@ -475,3 +475,7 @@
 # 22 July
 
 1. 1695. Maximum Erasure Value
+
+# 23 July
+
+1. 1717. Maximum Score From Removing Substrings
