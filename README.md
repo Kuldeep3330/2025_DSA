@@ -479,3 +479,7 @@
 # 23 July
 
 1. 1717. Maximum Score From Removing Substrings
+
+# 24 July
+
+1. 2322. Minimum Score After Removals on a Tree
