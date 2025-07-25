@@ -483,3 +483,7 @@
 # 24 July
 
 1. 2322. Minimum Score After Removals on a Tree
+
+# 25 July
+
+1. 3487. Maximum Unique Subarray Sum After Deletion
