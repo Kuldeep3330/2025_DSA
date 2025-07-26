@@ -487,3 +487,7 @@
 # 25 July
 
 1. 3487. Maximum Unique Subarray Sum After Deletion
+
+# 26 July
+
+1. 3480. Maximize Subarrays After Removing One Conflicting Pair
