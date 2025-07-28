@@ -1,46 +1,46 @@
-// class MyQueue {
-//     constructor() {
-//         this.arr = [];
-//     }
+class MyQueue {
+    constructor() {
+        this.arr = [];
+    }
 
-//     // Enqueue - Add item at the end of the queue
-//     enqueue(x) {
-//         this.arr.push(x);
-//     } 
+    // Enqueue - Add item at the end of the queue
+    enqueue(x) {
+        this.arr.push(x);
+    } 
 
-//     // Dequeue - Remove item from the front of the queue
-//     dequeue() {
-//         if (this.isEmpty()) {
-//             throw new Error("Underflow");
-//         }
-//         return this.arr.shift();
-//     }
+    // Dequeue - Remove item from the front of the queue
+    dequeue() {
+        if (this.isEmpty()) {
+            throw new Error("Underflow");
+        }
+        return this.arr.shift();
+    }
 
-//     // Get the item at the front of the queue
-//     front() {
-//         if (this.isEmpty()) {
-//             throw new Error("Queue is empty");
-//         }
-//         return this.arr[0];
-//     }
+    // Get the item at the front of the queue
+    front() {
+        if (this.isEmpty()) {
+            throw new Error("Queue is empty");
+        }
+        return this.arr[0];
+    }
 
-//     // Check if the queue is empty
-//     isEmpty() {
-//         return this.arr.length === 0;
-//     }
+    // Check if the queue is empty
+    isEmpty() {
+        return this.arr.length === 0;
+    }
 
-//     // Get the size of the queue
-//     size() {
-//         return this.arr.length;
-//     }
-// }
-// const q = new MyQueue();
-// q.enqueue(10);
-// q.enqueue(20);
-// q.enqueue(30);
-// console.log(q.dequeue()); // 10
-// console.log(q.front());   // 20
-// console.log(q.size());    // 2
+    // Get the size of the queue
+    size() {
+        return this.arr.length;
+    }
+}
+const q = new MyQueue();
+q.enqueue(10);
+q.enqueue(20);
+q.enqueue(30);
+console.log(q.dequeue()); // 10
+console.log(q.front());   // 20
+console.log(q.size());    // 2
 
 //linked implementation of Queue
 class Node {
