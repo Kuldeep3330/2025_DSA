@@ -495,3 +495,7 @@
 # 27 July
 
 1.2210. Count Hills and Valleys in an Array
+
+# 28 July
+
+1. 2044. Count Number of Maximum Bitwise-OR Subsets
