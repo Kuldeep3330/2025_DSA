@@ -499,3 +499,7 @@
 # 28 July
 
 1. 2044. Count Number of Maximum Bitwise-OR Subsets
+
+# 29 July
+
+1. 2411. Smallest Subarrays With Maximum Bitwise OR
