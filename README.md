@@ -503,3 +503,7 @@
 # 29 July
 
 1. 2411. Smallest Subarrays With Maximum Bitwise OR
+
+# 30 July
+
+1. 2419. Longest Subarray With Maximum Bitwise AND
