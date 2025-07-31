@@ -507,3 +507,7 @@
 # 30 July
 
 1. 2419. Longest Subarray With Maximum Bitwise AND
+
+# 31 July
+
+1. 898. Bitwise ORs of Subarrays
