@@ -511,3 +511,6 @@
 # 31 July
 
 1. 898. Bitwise ORs of Subarrays
+
+# 1 August
+1. 118. Pascal's Triangle
