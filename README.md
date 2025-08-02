@@ -514,3 +514,6 @@
 
 # 1 August
 1. 118. Pascal's Triangle
+
+# 2 August
+1. 2561. Rearranging Fruits
