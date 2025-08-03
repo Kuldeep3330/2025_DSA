@@ -517,3 +517,6 @@
 
 # 2 August
 1. 2561. Rearranging Fruits
+
+# 3 August
+1. 2106. Maximum Fruits Harvested After at Most K Steps
