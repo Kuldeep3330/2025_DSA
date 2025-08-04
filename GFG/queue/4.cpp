@@ -11,11 +11,11 @@ void printQueue(queue<int> q){
     }
 }
 
-void printAllNum(vector<int> &v){
+void printAllNum(vector<int> &v, int k){
     queue<int> q;
     for(int i=0; i<v.size(); i++){
         q.push(v[i]);
-        if(q.size()==3){
+        if(q.size()==k){
             printQueue(q);
             cout<<endl;
             q.pop();
@@ -25,6 +25,6 @@ void printAllNum(vector<int> &v){
 
 int main(){
     vector<int> v={3,6,2,7,8,11};
-    printAllNum(v);
+    printAllNum(v, 3);
     return 0;
 }
