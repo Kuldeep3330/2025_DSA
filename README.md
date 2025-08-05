@@ -520,3 +520,6 @@
 
 # 3 August
 1. 2106. Maximum Fruits Harvested After at Most K Steps
+
+# 5 August
+1. 3477. Fruits Into Baskets II
