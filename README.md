@@ -526,3 +526,6 @@
 
 # 6 August
 1. 3479. Fruits Into Baskets III
+
+# 7 AUgust
+1. 3363. Find the Maximum Number of Fruits Collected
