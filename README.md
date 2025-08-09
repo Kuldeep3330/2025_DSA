@@ -529,3 +529,6 @@
 
 # 7 AUgust
 1. 3363. Find the Maximum Number of Fruits Collected
+
+# 8 August
+1. 231. Power of Two
