@@ -532,3 +532,6 @@
 
 # 8 August
 1. 231. Power of Two
+
+# 14 August
+1. 2264. Largest 3-Same-Digit Number in String
