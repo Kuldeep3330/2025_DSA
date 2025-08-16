@@ -539,3 +539,6 @@
 
 # 15 August
 1. 342. Power of Four
+
+# 16 August
+1. 1323. Maximum 69 Number
