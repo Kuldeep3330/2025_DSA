@@ -542,3 +542,6 @@
 
 # 16 August
 1. 1323. Maximum 69 Number
+
+# 17 August
+1. New 21 Game
