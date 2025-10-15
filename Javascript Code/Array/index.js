@@ -367,3 +367,48 @@ function circularMaximumSubarraySum(arr) {
 console.log(circularMaximumSubarraySum([8, -4, 3, -5, 4]));//12
 
 //majority element in an array
+//using map
+function majorityElement(arr){
+    let freqMap=new Map();
+    for(const num of arr){
+        if(freqMap.has(num)){
+            freqMap.set(num, freqMap.get(num)+1);
+        }else{
+            freqMap.set(num, 1);
+        }
+    }
+    let majorityCount=Math.floor(arr.length/2);
+    for(const [key, value] of freqMap){
+        if(value>majorityCount){
+            return key;
+
+        }
+    }
+    return -1;
+}
+console.log(majorityElement([3,2,3]));//3
+
+//method 2 using sorting
+function majorityElement_2(arr){
+    let res=0, count=1;
+    for(let i=1; i<arr.length; i++){
+        if(arr[i]==arr[res]){
+            count++;
+        }else{
+            count--;
+        }
+        if(count==0){
+            res=i;
+            count=1;
+        }
+    }
+    let count2=0;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]==arr[res]){
+            count2++;
+        }
+    }
+    return count2>Math.floor(arr.length/2)?arr[res]:-1;
+}
+
+console.log(majorityElement_2([3,2,3]));//3

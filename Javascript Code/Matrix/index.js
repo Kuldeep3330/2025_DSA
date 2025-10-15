@@ -13,86 +13,85 @@ function printSnakePattern(mat){
     let rows=mat.length;
     let cols=mat[0].length;
     for(let i=0; i<rows; i++){
+        let row=" ";
         if(i==0 || i%2==0){
             for(let j=0; j<cols; j++){
-                console.log(mat[i][j]+" ");                
+                // console.log(mat[i][j]+" ");  
+                row=row+mat[i][j]+" ";              
             }
         }
         else{
             for( let j=cols-1; j>=0; j--){
-                console.log(mat[i][j]+" ");
+                // console.log(mat[i][j]+" ");
+                row=row+mat[i][j]+" ";
             }
         }
+        console.log(row);
     }
 }
 
-printSnakePattern([[1,2,3],[4,5,6],[7,8,9]]);
+printSnakePattern([[1,2,3,4],[5,6,7,8],[9,10,11,12], [13,14,15,16]]);
 
-//Matrix Boundary traversal
-function printBoundary(mat) {
-  const r = mat.length;
-  const c = mat[0].length;
-  let result = [];
 
-  let left = 0, right = c - 1, top = 0, bottom = r - 1;
-
-  // Top row
-  for (let i = left; i <= right; i++) result.push(mat[top][i]);
-  top++;
-
-  // Right column
-  for (let i = top; i <= bottom; i++) result.push(mat[i][right]);
-  right--;
-
-  // Bottom row
-  for (let i = right; i >= left; i--) result.push(mat[bottom][i]);
-  bottom--;
-
-  // Left column
-  for (let i = bottom; i >= top; i--) result.push(mat[i][left]);
-  left++;
-
-  console.log(result.join(" "));
+// Matrix Boundary traversal
+function boundaryTraversal(mat){
+    let rows=mat.length, cols=mat[0].length;
+    let top=0, left=0, bottom=rows-1, right=cols-1;
+    let row="";
+    for( let i=left; i<=right; i++){
+        row=row+mat[top][i]+" ";
+    }
+    top++;
+    for(let i=top; i<=bottom; i++){
+        row=row+mat[i][right]+" ";
+    }
+    right--;
+    for(let i =right; i>=left; i--){
+        row=row+mat[bottom][i]+" ";
+    }
+    bottom--;
+    for( let i=bottom; i>=top;i--){
+        row=row+mat[i][left]+" ";
+    }
+    left++;
+    return row;
 }
 
-// Example:
-printBoundary([
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9, 10, 11, 12],
-  [13, 14, 15, 16]
-]);
-// Output: 1 2 3 4 8 12 16 15 14 13 9 5
+console.log(boundaryTraversal([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]));
 
-//Matrix in spiral form
-
-// transpose of a matrix
+//transpose of matrix
 function transpose(mat){
     let rows=mat.length;
     let cols=mat[0].length;
-    for(let i=0; i<rows; i++){
+    for( let i=0; i<rows; i++){
         for(let j=i+1; j<cols; j++){
-            [mat[i][j], mat[j][i]]=[mat[j][i], mat[i][j]];
+            [mat[i][j], mat[j][i]]=[mat[j][i], mat[i][j]]
         }
     }
 }
-let mat3=[[1,2,3],[4,5,6],[7,8,9]];
+let mat3=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
 transpose(mat3);
 console.log(mat3);
-//rotate matrix by 90 degree
+
+// rotate by 90 degree
 function rotateBy90(mat){
-    transpose(mat);
-    let rows=mat.length;
-    let cols=mat[0].length;
+    // first transpose the matrix
+    let rows=mat.length, cols=mat[0].length;
     for(let i=0; i<rows; i++){
-        let left=0, right=cols-1;
-        while(left<right){
-            [mat[i][left], mat[i][right]]=[mat[i][right], mat[i][left]];
-            left++;
-            right--;
+        for(let j=i+1; j<cols; j++){
+            [mat[i][j], mat[j][i]]=[mat[j][i], mat[i][j]]
         }
     }
 
+    
+    for(let i=0; i<cols; i++){
+        let low=0, high=rows-1;
+        while(low<high){
+            [mat[low][i], mat[high][i]]=[mat[high][i], mat[low][i]];
+            low++;
+            high--;
+        }
+    }
 }
 
 let mat4=[[1,2,3],[4,5,6],[7,8,9]];
