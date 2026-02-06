@@ -147,53 +147,88 @@
 
 //left rotate an array by d positions
 
-function leftRotate(arr, d){
-    d=d%arr.length; // in case d>arr.length
-    return arr.slice(d).concat(arr.slice(0, d));
-}
+// function leftRotate(arr, d){
+//     d=d%arr.length; // in case d>arr.length
+//     return arr.slice(d).concat(arr.slice(0, d));
+// }
 
-console.log(leftRotate([1,2,3,4,5], 2)); // [3, 4, 5, 1, 2]
+// console.log(leftRotate([1,2,3,4,5], 2)); // [3, 4, 5, 1, 2]
 
 
-// leaders in an array
-// [16, 17, 4, 3, 5, 2]-> [17, 5, 2]
-function leaders(arr){
-    let leaders=[];
-    let max=-Infinity
-    for( let i=arr.length-1; i>=0; i--){
-        if(arr[i]>max){
-            max=arr[i];
-            leaders.push(max);
-        }
-    }
-    return leaders.reverse();   
-}
-console.log(leaders([16, 17, 4, 3, 5, 2])); // [17, 5, 2]
+// // leaders in an array
+// // [16, 17, 4, 3, 5, 2]-> [17, 5, 2]
+// function leaders(arr){
+//     let leaders=[];
+//     let max=-Infinity
+//     for( let i=arr.length-1; i>=0; i--){
+//         if(arr[i]>max){
+//             max=arr[i];
+//             leaders.push(max);
+//         }
+//     }
+//     return leaders.reverse();   
+// }
+// console.log(leaders([16, 17, 4, 3, 5, 2])); // [17, 5, 2]
 
-//frequencies in sorted array
-function frequencies(arr){
-    let n = arr.length;
-    let freq=1;
+// //frequencies in sorted array
+// function frequencies(arr){
+//     let n = arr.length;
+//     let freq=1;
+//     for( let i=1; i<n; i++){
+//         if(arr[i]===arr[i-1]){
+//             freq++;
+//         }else{
+//             console.log(arr[i-1] + " occurs " + freq + " times");
+//             freq=1;
+//         }
+//     }
+//     console.log(arr[n-1] + " occurs " + freq + " times");
+// }
+// frequencies([10,10,20,20,20,30]);
+
+// //method 2 using map
+// function frequenciesMap(arr){
+//     let freqMap=new Map();  
+//     for( let x of arr){
+//         freqMap.set(x, (freqMap.get(x) || 0) + 1);
+//     }
+//     for( let [key, value] of freqMap){
+//         console.log(key + " occurs " + value + " times");
+//     }
+// }
+// frequenciesMap([10,10,20,20,20,30]);
+
+
+//Trapping Rain water
+function trappingWater(arr){
+    let n=arr.length;
+    let left=Array(n), right=Array(n)
+    left[0]=arr[0]
     for( let i=1; i<n; i++){
-        if(arr[i]===arr[i-1]){
-            freq++;
-        }else{
-            console.log(arr[i-1] + " occurs " + freq + " times");
-            freq=1;
-        }
+        left[i]=Math.max(left[i-1], arr[i]);
     }
-    console.log(arr[n-1] + " occurs " + freq + " times");
-}
-frequencies([10,10,20,20,20,30]);
 
-//method 2 using map
-function frequenciesMap(arr){
-    let freqMap=new Map();  
-    for( let x of arr){
-        freqMap.set(x, (freqMap.get(x) || 0) + 1);
+    right[n-1]=arr[n-1]
+    for( let i=n-2; i>=0; i--){
+        right[i]=Math.max(right[i+1], arr[i]);
     }
-    for( let [key, value] of freqMap){
-        console.log(key + " occurs " + value + " times");
-    }
+    let res=0;
+    for(let i=1; i<n-1; i++){
+        res+=Math.min(left[i], right[i])-arr[i]
+    }   
+    return res;
 }
-frequenciesMap([10,10,20,20,20,30]);
+
+console.log(trappingWater([2,1,3,4,9]));// output 
+
+//Kadane's ALgorithm
+
+function maxSubarray(arr){
+    let curr=arr[0] , res=arr[0];
+    for(let i=1; i<arr.length; i++){
+        curr=Math.max(arr[i], curr+arr[i]);
+        res=Math.max(res, curr)
+    }
+    return res;
+}
+
